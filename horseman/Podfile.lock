@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (4.8.0)
+  - HandyJSON (4.2.1)
+  - Kingfisher (4.10.1)
+  - MJRefresh (3.1.15.7)
+  - SnapKit (4.0.1)
+  - SwiftyJSON (4.2.0)
+  - UMengAnalytics-NO-IDFA (4.2.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - HandyJSON
+  - Kingfisher
+  - MJRefresh
+  - SnapKit (~> 4.0.0)
+  - SwiftyJSON
+  - UMengAnalytics-NO-IDFA
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - HandyJSON
+    - Kingfisher
+    - MJRefresh
+    - SnapKit
+    - SwiftyJSON
+    - UMengAnalytics-NO-IDFA
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  HandyJSON: d0c5fc80204f29056d59d3e5c4587fa0b16b60a8
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
+
+PODFILE CHECKSUM: 4f3a9a3c5f97f85ddbd48805fe25f7a09fb983ef
+
+COCOAPODS: 1.5.3
