@@ -37,12 +37,7 @@ class DealerMOdel{
         code = jsonData["code"].stringValue
         dealerLevelId = jsonData["dealerLevelId"].stringValue
         dealerRoleId = jsonData["dealerRoleId"].stringValue
-        invitationCode = jsonData["invitationCode"].stringValue
-        parentId = jsonData["parentId"].stringValue
-        shortName = jsonData["shortName"].stringValue
-        status = jsonData["status"].stringValue
-        uid = jsonData["uid"].stringValue
-        userId = jsonData["userId"].stringValue
+
     }
 }
 
