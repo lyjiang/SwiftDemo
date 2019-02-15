@@ -13,6 +13,9 @@
 		460AF1D622169AA200456A18 /* YHSpecialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460AF1CE22169AA200456A18 /* YHSpecialVC.swift */; };
 		460AF1D722169AA200456A18 /* HMReceivVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460AF1D122169AA200456A18 /* HMReceivVC.swift */; };
 		460AF1D822169AA200456A18 /* HToosl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460AF1D222169AA200456A18 /* HToosl.swift */; };
+		460AF1DD22169D2700456A18 /* 11550214137_.pic_hd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 460AF1DA22169D2700456A18 /* 11550214137_.pic_hd.jpg */; };
+		460AF1DE22169D2700456A18 /* 21550214138_.pic_hd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 460AF1DB22169D2700456A18 /* 21550214138_.pic_hd.jpg */; };
+		460AF1DF22169D2700456A18 /* 31550214139_.pic_hd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 460AF1DC22169D2700456A18 /* 31550214139_.pic_hd.jpg */; };
 		460F26332213DEB700E16B28 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460F26322213DEB700E16B28 /* Const.swift */; };
 		460F263A221405D300E16B28 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 460F2639221405D300E16B28 /* BViewController.m */; };
 		460F265422140C4400E16B28 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 460F265122140C4400E16B28 /* README.txt */; };
@@ -73,6 +76,9 @@
 		460AF1CE22169AA200456A18 /* YHSpecialVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHSpecialVC.swift; sourceTree = "<group>"; };
 		460AF1D122169AA200456A18 /* HMReceivVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMReceivVC.swift; sourceTree = "<group>"; };
 		460AF1D222169AA200456A18 /* HToosl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HToosl.swift; sourceTree = "<group>"; };
+		460AF1DA22169D2700456A18 /* 11550214137_.pic_hd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11550214137_.pic_hd.jpg; sourceTree = "<group>"; };
+		460AF1DB22169D2700456A18 /* 21550214138_.pic_hd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 21550214138_.pic_hd.jpg; sourceTree = "<group>"; };
+		460AF1DC22169D2700456A18 /* 31550214139_.pic_hd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 31550214139_.pic_hd.jpg; sourceTree = "<group>"; };
 		460F26322213DEB700E16B28 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		460F2638221405D300E16B28 /* BViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
 		460F2639221405D300E16B28 /* BViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
@@ -206,6 +212,16 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		460AF1D922169D2700456A18 /* gitimage */ = {
+			isa = PBXGroup;
+			children = (
+				460AF1DA22169D2700456A18 /* 11550214137_.pic_hd.jpg */,
+				460AF1DB22169D2700456A18 /* 21550214138_.pic_hd.jpg */,
+				460AF1DC22169D2700456A18 /* 31550214139_.pic_hd.jpg */,
+			);
+			path = gitimage;
+			sourceTree = "<group>";
+		};
 		460F264E22140C4400E16B28 /* WechatSDK1.8.2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +287,7 @@
 		4619F2AB21A3A375001E7C60 /* horseman */ = {
 			isa = PBXGroup;
 			children = (
+				460AF1D922169D2700456A18 /* gitimage */,
 				4605F13D221261AB001DE7DB /* Register */,
 				4626841E221171170027DD9A /* YHTools */,
 				465B8E16220058D900592D7E /* Network */,
@@ -557,9 +574,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				460AF1DF22169D2700456A18 /* 31550214139_.pic_hd.jpg in Resources */,
 				4619F2B721A3A376001E7C60 /* LaunchScreen.storyboard in Resources */,
+				460AF1DD22169D2700456A18 /* 11550214137_.pic_hd.jpg in Resources */,
 				4619F2B421A3A376001E7C60 /* Assets.xcassets in Resources */,
 				460F265422140C4400E16B28 /* README.txt in Resources */,
+				460AF1DE22169D2700456A18 /* 21550214138_.pic_hd.jpg in Resources */,
 				4619F2B221A3A375001E7C60 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
