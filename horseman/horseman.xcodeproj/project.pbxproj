@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4605775321DF265100BC4779 /* HToosl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4605775221DF265100BC4779 /* HToosl.swift */; };
+		460AF1D322169AA200456A18 /* YHSpecialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460AF1C922169AA200456A18 /* YHSpecialCell.swift */; };
+		460AF1D422169AA200456A18 /* YHHotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460AF1CC22169AA200456A18 /* YHHotVC.swift */; };
+		460AF1D522169AA200456A18 /* YHProductHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460AF1CD22169AA200456A18 /* YHProductHomeVC.swift */; };
+		460AF1D622169AA200456A18 /* YHSpecialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460AF1CE22169AA200456A18 /* YHSpecialVC.swift */; };
+		460AF1D722169AA200456A18 /* HMReceivVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460AF1D122169AA200456A18 /* HMReceivVC.swift */; };
+		460AF1D822169AA200456A18 /* HToosl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460AF1D222169AA200456A18 /* HToosl.swift */; };
 		460F26332213DEB700E16B28 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460F26322213DEB700E16B28 /* Const.swift */; };
 		460F263A221405D300E16B28 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 460F2639221405D300E16B28 /* BViewController.m */; };
 		460F265422140C4400E16B28 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 460F265122140C4400E16B28 /* README.txt */; };
@@ -30,7 +35,6 @@
 		4619F2C221A3A376001E7C60 /* horsemanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619F2C121A3A376001E7C60 /* horsemanTests.swift */; };
 		4619F2CD21A3A376001E7C60 /* horsemanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619F2CC21A3A376001E7C60 /* horsemanUITests.swift */; };
 		4619F2FE21A3E1C7001E7C60 /* HMHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619F2FD21A3E1C7001E7C60 /* HMHomeVC.swift */; };
-		4619F30021A3E28D001E7C60 /* HMReceivVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619F2FF21A3E28D001E7C60 /* HMReceivVC.swift */; };
 		4619F30221A3E2A2001E7C60 /* HMMineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619F30121A3E2A2001E7C60 /* HMMineVC.swift */; };
 		4619F30F21A4122C001E7C60 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4619F30E21A4122C001E7C60 /* UIColor+Extension.m */; };
 		4619F31221A41437001E7C60 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4619F31121A41437001E7C60 /* UIColor-Extension.swift */; };
@@ -63,7 +67,12 @@
 /* Begin PBXFileReference section */
 		2DD47FE54C9AEB3F7E98536A /* Pods_horseman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_horseman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30051E463D1AD85214EBDDA1 /* Pods-horseman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-horseman.debug.xcconfig"; path = "Pods/Target Support Files/Pods-horseman/Pods-horseman.debug.xcconfig"; sourceTree = "<group>"; };
-		4605775221DF265100BC4779 /* HToosl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HToosl.swift; sourceTree = "<group>"; };
+		460AF1C922169AA200456A18 /* YHSpecialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHSpecialCell.swift; sourceTree = "<group>"; };
+		460AF1CC22169AA200456A18 /* YHHotVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHHotVC.swift; sourceTree = "<group>"; };
+		460AF1CD22169AA200456A18 /* YHProductHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHProductHomeVC.swift; sourceTree = "<group>"; };
+		460AF1CE22169AA200456A18 /* YHSpecialVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHSpecialVC.swift; sourceTree = "<group>"; };
+		460AF1D122169AA200456A18 /* HMReceivVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMReceivVC.swift; sourceTree = "<group>"; };
+		460AF1D222169AA200456A18 /* HToosl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HToosl.swift; sourceTree = "<group>"; };
 		460F26322213DEB700E16B28 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		460F2638221405D300E16B28 /* BViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
 		460F2639221405D300E16B28 /* BViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
@@ -98,7 +107,6 @@
 		4619F2CC21A3A376001E7C60 /* horsemanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = horsemanUITests.swift; sourceTree = "<group>"; };
 		4619F2CE21A3A376001E7C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4619F2FD21A3E1C7001E7C60 /* HMHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMHomeVC.swift; sourceTree = "<group>"; };
-		4619F2FF21A3E28D001E7C60 /* HMReceivVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMReceivVC.swift; sourceTree = "<group>"; };
 		4619F30121A3E2A2001E7C60 /* HMMineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMMineVC.swift; sourceTree = "<group>"; };
 		4619F30521A3F03D001E7C60 /* HMConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMConfig.h; sourceTree = "<group>"; };
 		4619F30621A3F03D001E7C60 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -155,6 +163,47 @@
 				460F265E2214122E00E16B28 /* Manager */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		460AF1C822169AA200456A18 /* CELL */ = {
+			isa = PBXGroup;
+			children = (
+				460AF1C922169AA200456A18 /* YHSpecialCell.swift */,
+			);
+			path = CELL;
+			sourceTree = "<group>";
+		};
+		460AF1CA22169AA200456A18 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		460AF1CB22169AA200456A18 /* VCS */ = {
+			isa = PBXGroup;
+			children = (
+				460AF1CC22169AA200456A18 /* YHHotVC.swift */,
+				460AF1CD22169AA200456A18 /* YHProductHomeVC.swift */,
+				460AF1CE22169AA200456A18 /* YHSpecialVC.swift */,
+			);
+			path = VCS;
+			sourceTree = "<group>";
+		};
+		460AF1CF22169AA200456A18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		460AF1D022169AA200456A18 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				460AF1D122169AA200456A18 /* HMReceivVC.swift */,
+				460AF1D222169AA200456A18 /* HToosl.swift */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		460F264E22140C4400E16B28 /* WechatSDK1.8.2 */ = {
@@ -266,8 +315,11 @@
 		4619F2F621A3E16E001E7C60 /* Receiving */ = {
 			isa = PBXGroup;
 			children = (
-				4619F2FF21A3E28D001E7C60 /* HMReceivVC.swift */,
-				4605775221DF265100BC4779 /* HToosl.swift */,
+				460AF1C822169AA200456A18 /* CELL */,
+				460AF1CF22169AA200456A18 /* Model */,
+				460AF1D022169AA200456A18 /* Tool */,
+				460AF1CB22169AA200456A18 /* VCS */,
+				460AF1CA22169AA200456A18 /* VIew */,
 			);
 			path = Receiving;
 			sourceTree = "<group>";
@@ -582,27 +634,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4605775321DF265100BC4779 /* HToosl.swift in Sources */,
 				460F26612214122E00E16B28 /* WXApiManager.m in Sources */,
 				462684202211713C0027DD9A /* YHProgressHUD.swift in Sources */,
 				4618ECE622153EF2006C91E2 /* YHRegisterModel.swift in Sources */,
+				460AF1D722169AA200456A18 /* HMReceivVC.swift in Sources */,
 				469BD6F821FAA1AD00284E89 /* CarViewController.swift in Sources */,
 				4618ECE022153E8F006C91E2 /* YHRegisterHome.swift in Sources */,
 				465B8E1A22005A1D00592D7E /* YHDomainManager.swift in Sources */,
 				4619F2AF21A3A375001E7C60 /* ViewController.swift in Sources */,
+				460AF1D622169AA200456A18 /* YHSpecialVC.swift in Sources */,
+				460AF1D522169AA200456A18 /* YHProductHomeVC.swift in Sources */,
+				460AF1D422169AA200456A18 /* YHHotVC.swift in Sources */,
 				460F26332213DEB700E16B28 /* Const.swift in Sources */,
 				4619F30F21A4122C001E7C60 /* UIColor+Extension.m in Sources */,
 				4626841B22111A8A0027DD9A /* YHNetworkManager.swift in Sources */,
 				4619F2FE21A3E1C7001E7C60 /* HMHomeVC.swift in Sources */,
+				460AF1D322169AA200456A18 /* YHSpecialCell.swift in Sources */,
 				4619F2AD21A3A375001E7C60 /* AppDelegate.swift in Sources */,
 				4619F30221A3E2A2001E7C60 /* HMMineVC.swift in Sources */,
 				460F263A221405D300E16B28 /* BViewController.m in Sources */,
 				4626841922111A340027DD9A /* YHPostParams.swift in Sources */,
 				465B8E18220059AE00592D7E /* YHRequestPath.swift in Sources */,
 				4619F31221A41437001E7C60 /* UIColor-Extension.swift in Sources */,
-				4619F30021A3E28D001E7C60 /* HMReceivVC.swift in Sources */,
 				4618ECE122153E8F006C91E2 /* YHwxAccreditBtu.swift in Sources */,
 				4618ECE822155D00006C91E2 /* LYRegisterModel.swift in Sources */,
+				460AF1D822169AA200456A18 /* HToosl.swift in Sources */,
 				4618ECEA22155E13006C91E2 /* LYBaseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
