@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import SwiftyJSON
+import HandyJSON
+import AlamofireImage
 
 class YHSpecialCell: UITableViewCell {
     
@@ -15,14 +18,15 @@ class YHSpecialCell: UITableViewCell {
         view.backgroundColor = UIColor.white
         view.layer.cornerRadius = 4
         return view
-    }()
+        }()
     
     private lazy var logoImageview:UIImageView = { [unowned self] in
         let imageview = UIImageView.init()
         imageview.image = UIImage.init(named: "login_icon")
         imageview.layer.cornerRadius = 15
+        imageview.layer.masksToBounds = true
         return imageview
-    }()
+        }()
     
     private lazy var brandnamelabel:UILabel = { [unowned self] in
         let label = UILabel.init()
@@ -30,7 +34,7 @@ class YHSpecialCell: UITableViewCell {
         label.font = UIFont.systemFont(ofSize: 14)
         label.textColor = UIColor.init(hexColor: "333333")
         return label
-    }()
+        }()
     
     private lazy var attentionBtu:UIButton = { [unowned self] in
         let btu = UIButton.init()
@@ -40,8 +44,9 @@ class YHSpecialCell: UITableViewCell {
         btu.layer.borderWidth = 1
         btu.layer.borderColor = UIColor.init(hexColor: "ededed").cgColor
         btu.layer.cornerRadius = 15
+        btu.addTarget(self, action: #selector(attention), for: .touchUpInside)
         return btu
-    }()
+        }()
     
     private lazy var contentlabel:UILabel = { [unowned self] in
         let label = UILabel.init()
@@ -51,19 +56,19 @@ class YHSpecialCell: UITableViewCell {
         label.numberOfLines = 0
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
         return label
-    }()
+        }()
     
     private lazy var contentImageview:UIImageView = { [unowned self] in
         let imageview = UIImageView.init()
         imageview.contentMode = UIView.ContentMode.scaleToFill
         imageview.image = UIImage.init(named: "bannerdefault")
         return imageview
-    }()
+        }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.backgroundColor = UIColor.init(hexColor: "f2f2f2")
-
+        
         self.selectionStyle = UITableViewCell.SelectionStyle.none
         self.initUI()
         
@@ -80,7 +85,6 @@ class YHSpecialCell: UITableViewCell {
         bgview.snp.makeConstraints { (make) in
             make.left.equalTo(20)
             make.right.equalTo(-20)
-            make.height.equalTo(300)
             make.top.equalTo(5)
             make.bottom.equalTo(-15)
         }
@@ -113,6 +117,7 @@ class YHSpecialCell: UITableViewCell {
             make.right.equalTo(-10)
             make.top.equalTo(contentlabel.snp_bottomMargin).offset(10)
             make.height.equalTo(200)
+            make.bottom.equalTo(-15)
         }
         
     }
@@ -124,13 +129,45 @@ class YHSpecialCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
- 
+        
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
-
+    
+    func drawUI(dic:NSDictionary){
+        //        let productmodel = JSONDeserializer<LYProductlistItem>.deserializeFrom(dict: dic as? NSDictionary)
+        
+        let productmodel = JSONDeserializer<LYProductlistItem>.deserializeFrom(dict: dic)
+        
+        self.brandnamelabel.text = productmodel?.brandNameCN
+        self.contentlabel.text = productmodel?.activityContent
+        
+        
+        let imaurl: String! = productmodel?.brandLogo
+        let baseurl: String! = (YH_BASE_IMG_URL as NSString) as String
+        print("打印图片地址\(String(describing: baseurl))\(String(describing: imaurl))")
+        
+        //        let url = URL(string: "\(String(describing: baseurl))\(String(describing: imaurl))")!
+        
+        let url = URL(string: baseurl+imaurl)
+        
+        self.logoImageview.af_setImage(withURL: url!)
+        
+        let bimaurl: String! = productmodel?.activityPicture
+        let bbaseurl: String! = YH_BASE_IMG_URL
+        //        print("打印图片地址\(bbaseurl)\(bimaurl)")
+        
+        let burl = URL(string: bbaseurl+bimaurl)
+        self.contentImageview.af_setImage(withURL: burl!)
+    }
+    
+    @objc func attention(sender:UIButton) {
+        NotificationCenter.default.post(name: NSNotification.Name("NOtest"), object: self, userInfo: ["post":"原来是你"])
+    }
+    
 }
+

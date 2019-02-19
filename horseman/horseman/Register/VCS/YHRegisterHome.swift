@@ -440,34 +440,36 @@ class YHRegisterHome: UIViewController, WXApiManagerDelegate {
         YHProgressHUD.share().showLoding()
         YHNetworkManager.postData(YHDomainManager.share().baseUrl, YHRequestPath.codelogin, parmas: dic, parmasJSONEncod : false, type: parmaType.parmasERPSalt, successCallback: { [unowned self] (result) in
             
-            let heheh = result?.value
-            
             //返回数据处理方式一：原始方式 OK
-//            let ddic:[NSString:Any] = result?.value as! [NSString : Any]
-//            let userdic:[NSString:Any] = ddic["user"] as! [NSString : Any]
-//            let uid:NSString = userdic["uid"] as! NSString
+            //            let ddic:[NSString:Any] = result?.value as! [NSString : Any]
+            //            let userdic:[NSString:Any] = ddic["user"] as! [NSString : Any]
+            //            let uid:NSString = userdic["uid"] as! NSString
             
             //返回数据处理方式二：SwiftyJSON OK
-//            let registermodel = YHRegisterModel.init(jsonData: JSON(result?.value ?? ""))
-//
-//            let usermodel = registermodel.usermodel
-//
-//            let uid:NSString = usermodel.uid as NSString
+            //            let registermodel = YHRegisterModel.init(jsonData: JSON(result?.value ?? ""))
+            //
+            //            let usermodel = registermodel.usermodel
+            //
+            //            let uid:NSString = usermodel.uid as NSString
             
             
             //返回数据处理方式三：SwiftyJSON HandyJSON
             let lyregismodel = JSONDeserializer<LYRegisterModel>.deserializeFrom(dict: result?.value as? NSDictionary)
-
+            
             let lyusermodel = lyregismodel?.user
             
-            let uid:NSString = lyusermodel?.uid as! NSString
+            //下面3种都对， ？表示为nil也不崩溃 能继续往下走，直接返回nil， ！表示一定不是nil，当然如果返回nil 就崩溃了 var b:String! 这种的 任何用b的地方都会默认跟上了一个！要小心使用哦
+            let uid:String? = lyusermodel!.uid
+            //            let uid:String! = lyusermodel?.uid
+            //            let uid:String = (lyusermodel?.uid)!
+            
             
             
             UserDefaults.standard.set(uid, forKey: "USERID")
             AppDelegate.appDelegate()?.thome()
             
-
-  
+            
+            
         }) { [unowned self](result) in
             
         }

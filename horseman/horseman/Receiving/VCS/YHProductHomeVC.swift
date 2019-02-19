@@ -35,7 +35,7 @@ class YHProductHomeVC: UIViewController,UIPageViewControllerDataSource,UIPageVie
         createPageUI()
         
     }
-
+    
     func createPageUI() {
         
         pageViewControllerMain.view.frame = CGRect(x: 0, y: 64+33, width: SCREEN_WIDTH, height: SCREEN_HEIGHT-64-33)
@@ -206,15 +206,15 @@ class YHProductHomeVC: UIViewController,UIPageViewControllerDataSource,UIPageVie
     override func viewWillAppear(_ animated: Bool) {
         print("将要出现")
         //影藏导航栏
-//        self.navigationController?.isNavigationBarHidden = true
+        //        self.navigationController?.isNavigationBarHidden = true
         
     }
     //视图将要消失的时候执行
     override func viewWillDisappear(_ animated: Bool) {
         print("将要消失")
-
+        
     }
-
+    
     //    Swift里面舍弃了OC的dealloc方法，经过笔者多方查阅资料下面方法可以替代dealloc方法
     deinit {
         
